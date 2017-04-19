@@ -8,6 +8,7 @@ coinkey
   <img alt="Coverity Scan Build Status"
        src="https://scan.coverity.com/projects/12496/badge.svg"/>
 </a>
+
 JavaScript component for private keys, public keys, and addresses for crypto currencies such as Bitcoin, Litecoin, and Dogecoin. Works
 in both Node.js and the browser.
 
