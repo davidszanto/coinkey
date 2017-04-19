@@ -2,6 +2,7 @@ coinkey
 =======
 
 [![Version](http://img.shields.io/npm/v/coinkey.svg)](https://www.npmjs.org/package/coinkey)
+[![build status](https://travis-ci.org/davidszanto/coinkey.svg?branch=master)](http://travis-ci.org/davidszanto/coinkey)
 [![Coverage Status](https://img.shields.io/coveralls/cryptocoinjs/coinkey.svg)](https://coveralls.io/r/cryptocoinjs/coinkey)
 <a href="https://scan.coverity.com/projects/davidszanto-coinkey">
   <img alt="Coverity Scan Build Status"
