@@ -8,19 +8,16 @@ node_js:
   - 0.12
   - 0.10
 env:
-  - TEST_SUITE=unit
-  - TEST_SUITE=coveralls
   global:
-   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
-   #   via the "travis encrypt" command using the project repo's public key
-   - secure: "HKbHPXwTthKhiKJTBU6m+5h4NwLoUCi0QkU214A6GGQqGonipQ6t2x/outXt0566guYRpT//K+cqWJR+EthENSP4h4yNYJL0eMOoWWImcIijTLW1R3z+XZ8uu5AJxgRphpbwlM9HGcWF6SuGahmjQQgq9o8XeaAIjRsNKj0DN2EFI2QIjYI1892WIsEkZnop7K8ineXEZCLBfkhhyYD6CeXanmfCr4Qu797w5U7wHwHMBTqRP5IDraLVcQ76LDS6f+b86eIYk3h4aKwHYwdyhauzJNC4dmF79rnODg/5kJ45XvY8qOrQJBrlj2x5Ax9FvqjKsfMEptHc4VXM4Nt8VVMcWXas5T7upmf5xnWDtfmTwMieb8q/COnbaPrGVe7/d/YFJ4ew0H9HQXgNBEAwtHMqGCcHo/cthXx6hcKTfGNXQiT1nCqOBt6loJeSiRGx2lOq57O6+iUmEoYy/VT3+xIKExY6QYF8PoHtDNsMLe8mMR2+yh3DdnXBBl17mwZ5iALHTgLrfiF83WyKmW18HM4CV32/pd2y1nSheSXM1zO2964l/UC+lzpTB4KX/vRin46Fi7gM4sOQUsjTo9FfLssASZoB5ttXj2pOIYYEQLOlhaYcWh5ofKPftkysGnploAeWMoyZf0OKmDm2E2bAW99bdxCx7B3JV4moxUanZFI="
-   
+   - secure: HKbHPXwTthKhiKJTBU6m+5h4NwLoUCi0QkU214A6GGQqGonipQ6t2x/outXt0566guYRpT//K+cqWJR+EthENSP4h4yNYJL0eMOoWWImcIijTLW1R3z+XZ8uu5AJxgRphpbwlM9HGcWF6SuGahmjQQgq9o8XeaAIjRsNKj0DN2EFI2QIjYI1892WIsEkZnop7K8ineXEZCLBfkhhyYD6CeXanmfCr4Qu797w5U7wHwHMBTqRP5IDraLVcQ76LDS6f+b86eIYk3h4aKwHYwdyhauzJNC4dmF79rnODg/5kJ45XvY8qOrQJBrlj2x5Ax9FvqjKsfMEptHc4VXM4Nt8VVMcWXas5T7upmf5xnWDtfmTwMieb8q/COnbaPrGVe7/d/YFJ4ew0H9HQXgNBEAwtHMqGCcHo/cthXx6hcKTfGNXQiT1nCqOBt6loJeSiRGx2lOq57O6+iUmEoYy/VT3+xIKExY6QYF8PoHtDNsMLe8mMR2+yh3DdnXBBl17mwZ5iALHTgLrfiF83WyKmW18HM4CV32/pd2y1nSheSXM1zO2964l/UC+lzpTB4KX/vRin46Fi7gM4sOQUsjTo9FfLssASZoB5ttXj2pOIYYEQLOlhaYcWh5ofKPftkysGnploAeWMoyZf0OKmDm2E2bAW99bdxCx7B3JV4moxUanZFI=
+  matrix:
+   - TEST_SUITE=unit
+   - TEST_SUITE=coveralls
 script: "npm run-script $TEST_SUITE"
 addons:
   coverity_scan:
     project:
       name: "davidszanto/coinkey"
-      description: "Build submitted via Travis CI"
     notification_email: cszoolee@gmail.com
     build_command_prepend: ""
     build_command:   ""
