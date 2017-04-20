@@ -22,3 +22,9 @@ addons:
     build_command_prepend: ""
     build_command:   ""
     branch_pattern: coverity_scan
+  sonarqube:
+    organization: "rethybalint-github"
+    token:
+      secure: SONAR_TOKEN
+  script:
+  - sonar-scanner
