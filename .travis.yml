@@ -25,6 +25,6 @@ addons:
   sonarqube:
     organization: "rethybalint-github"
     token:
-      secure: SONAR_TOKEN
+      secure: "UhD2plIa/QwiPC6C2d2T2meQCPlCW2JYW+P2MYNAAtgrdOx+jV6Tgr4j7jrVcB8NxMs6k9NG464d86AB8cQLtu1UdqYvQb1hwLHJ4luKriv5vo0VPtXzpnoUhKNt/6vU1zrLYrKpAz+Crlwh7sScgicVbHSysDiXHhEnyh5M5Vz/C7sogYPnMZWVOJxwKYsknAnr+Q/XCtvV5crakoExn3Y9cv8YcsNicP0lfYxyF1XQ31SBWSQJNOZhfE3YkAQaXNG3HIxkTTaRhv3cl+SSk6M7XUUh/o7ZAyu2JcAZWgaJaol60neF4B4bzmlYdEUXsABtV6Kgad7ECJD0ngsPnw0M4pPoeqsnnBlX9rY7mohG/f/m0bguuvHzmus78lU451eBzs4ruTaGczgEDQDBR74p0HoYaNtsiVLtz90mzSz5Jilx1WzbmaICxf1zwToSNpChDxr8EAx0PvnFFiSeniFnZ6tTtcdzlePjU/RtnB2ed0sty3BaUkFVsfNtYPBUTEwd/FALZyYDOkurG22rpGMrHzu4cHIMJCG8kyZiP/j63G6l7THQmeF++sbK9GMjUfnefHcovU6CAx5bavLlAKm9QT8A9vj8SabGYZ/so22FjjWZJXhbnyxB4/BOKZQkAxmxAY/HwsS3mM/dn3ZnmQA5J4LxJEv7WGRFwwOZsVg="
   script:
   - sonar-scanner
