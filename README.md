@@ -3,11 +3,7 @@ coinkey
 
 [![Version](http://img.shields.io/npm/v/coinkey.svg)](https://www.npmjs.org/package/coinkey)
 [![build status](https://travis-ci.org/davidszanto/coinkey.svg?branch=master)](http://travis-ci.org/davidszanto/coinkey)
-[![Coverage Status](https://img.shields.io/coveralls/cryptocoinjs/coinkey.svg)](https://coveralls.io/r/cryptocoinjs/coinkey)
-<a href="https://scan.coverity.com/projects/davidszanto-coinkey">
-  <img alt="Coverity Scan Build Status"
-       src="https://scan.coverity.com/projects/12496/badge.svg"/>
-</a>
+[![Coverage Status](https://coveralls.io/repos/github/davidszanto/coinkey/badge.svg)](https://coveralls.io/github/davidszanto/coinkey)
 
 JavaScript component for private keys, public keys, and addresses for crypto currencies such as Bitcoin, Litecoin, and Dogecoin. Works
 in both Node.js and the browser..
