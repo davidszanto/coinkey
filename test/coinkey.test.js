@@ -17,6 +17,15 @@ describe('CoinKey', function () {
       })
     })
 
+    describe('> when private key passed and function was called without new operator', function () {
+      it('should return an instance of CoinKey with fields set', function () {
+        var privateKey = secureRandom.randomBuffer(32)
+        var ck = CoinKey(privateKey)
+        assert(ck.compressed)
+        assert.equal(ck.privateKey.toString('hex'), privateKey.toString('hex'))
+      })
+    })
+
     describe('> when private key and versions', function () {
       it('should return an instance of CoinKey with versions', function () {
         var dogecoin = fixtures.valid.filter(function (f) { if (f.description.match(/dogecoin/)) return f})[0]
