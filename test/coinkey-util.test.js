@@ -10,7 +10,7 @@ describe('util', function () {
       assert.deepEqual(util.normalizeVersions({ versions: { public: 1, private: 2 } }), { public: 1, private: 2 })
       assert.deepEqual(util.normalizeVersions({ version: { public: 1, private: 2 } }), { public: 1, private: 2 })
 
-      assert.deepEqual(util.normalizeVersions({}), null)
+      assert.deepEqual(util.normalizeVersions(37), null)
       assert.deepEqual(util.normalizeVersions(null), null)
     })
   })
