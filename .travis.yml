@@ -1,5 +1,4 @@
 language: node_js
-group: deprecated-2017Q1 
 before_install:
   - "npm install npm -g"
   - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
@@ -23,4 +22,3 @@ addons:
     build_command_prepend: ""
     build_command:   ""
     branch_pattern: coverity_scan
-
